@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Latest space pics",
     "manifest_version": 3,
-    "author": "Sampurna Chapagain",
+    "author": "Jared and Tran",
     "action":{
         "default_popup": "index.html",
         "default_title": "Latest Space"
