@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  color: rgb(227, 227, 227);
+  color: white;
   background-color: rgb(20, 20, 20);
   /* font-family: Arial, Helvetica, sans-serif; */
   font-style: normal;
@@ -48,16 +48,34 @@ header h1 {
 
 .explanation {
   width: 500px;
-  padding: 30px 50px;
+  padding: 30px 60px;
   font-size: 14px;
   background-color: rgb(50, 50, 50);
 }
 
+.more-btns {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .solar-flares-btn {
+  width: 180px;
   background-color: grey;
   border: none;
-  color: rgb(227, 227, 227);
+  margin: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.asteroids-btn {
+  width: 180px;
+  background-color: grey;
+  border: none;
   margin: 5px;
   padding: 15px 32px;
   text-align: center;
@@ -66,10 +84,21 @@ header h1 {
   font-size: 16px;
 }
 
-.flares-text {
-  margin-left: 50px;
+.earth {
+  width: 180px;
+  background-color: grey;
+  border: none;
+  margin: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
+/* .flares-text {
+  margin-left: 50px;
+} */
 
-.sun-location {
+/* .sun-location {
   margin-left: 50px;
-}
+} */
