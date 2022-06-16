@@ -4,22 +4,25 @@ const QUERY = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`;
 // const MARS_WEATHER_QUERY = `https://api.nasa.gov/insight_weather/?api_key=${NASA_API_KEY}&feedtype=json&ver=1.0`;
 const CODESMITH_SATELITE = `https://api.nasa.gov/DONKI/FLR?startDate=2022-06-01&endDate=2022-06-14&api_key=${NASA_API_KEY}`;
 
-const marsBtn = document.querySelector('.mars-btn');
+const flaresBtn = document.querySelector('.solar-flares-btn');
 const flareContainer = document.querySelector('.marsWeather');
 
-marsBtn.addEventListener('click', (event) => {
+flaresBtn.addEventListener('click', (event) => {
   event.preventDefault();
 
   fetch(CODESMITH_SATELITE)
     .then((res) => res.json())
     .then((flares) => {
       console.log(flares);
-      marsBtn.remove();
+      flaresBtn.remove();
 
       for (const flare of flares) {
         const flarId = document.createElement('p');
+        flarId.className = "flares-text";
         flarId.innerText = `Flare ID: ${flare.flrID}`;
+
         const flareInfo = document.createElement('p');
+        flareInfo.className = "sun-location";
         flareInfo.innerText = `Location on the sun: ${flare.sourceLocation}`;
         flareContainer.appendChild(flarId);
         flareContainer.appendChild(flareInfo);

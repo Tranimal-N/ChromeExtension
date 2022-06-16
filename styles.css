@@ -1,10 +1,12 @@
 body {
   margin: 0;
-  color: rgb(227, 225, 225);
+  color: rgb(227, 227, 227);
   background-color: rgb(20, 20, 20);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-style: normal;
   font-family: 'Space Mono', monospace;
+  max-width: 800px;
+  max-height: 600px;
 }
 
 header {
@@ -21,6 +23,7 @@ header p {
 header h1 {
     margin-bottom: 0;
 }
+
 
 .nasa-pic {
   display: flex;
@@ -48,4 +51,25 @@ header h1 {
   padding: 30px 50px;
   font-size: 14px;
   background-color: rgb(50, 50, 50);
+}
+
+
+.solar-flares-btn {
+  background-color: grey;
+  border: none;
+  color: rgb(227, 227, 227);
+  margin: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.flares-text {
+  margin-left: 50px;
+}
+
+.sun-location {
+  margin-left: 50px;
 }
