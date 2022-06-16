@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+.nasa-pic {
+  width: 150px;
+  height: 50px;
+  border: 3px solid black;
+  display: flex;
+  padding-left: 50px;
+
+}
+
+.ex-nasa {
+  width: 50px;
+}

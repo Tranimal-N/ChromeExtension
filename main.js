@@ -1,12 +1,10 @@
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
-		'X-RapidAPI-Host': 'iss-location.p.rapidapi.com'
-	}
-};
+const NASA_API_KEY = 'mlKrJKavjhseEuXEhWtBC7t9oluRqNLmIUFHvyyM'
 
-fetch('https://iss-location.p.rapidapi.com/get', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+const QUERY = `https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`;
+
+fetch(QUERY)
+	.then((res) => res.json()).then((data) => {
+        const img = document.querySelector('.ex-pic');
+        img.src = data.url;
+        console.log(data)
+    });
